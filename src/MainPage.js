@@ -19,6 +19,17 @@ function MainPage() {
   });
 
   const buttonOnClick = () => {
+    document.getElementById("upload-btn").addEventListener("change", (e) => {
+      let file = e.target.files[0];
+      if (file !== undefined) {
+        const imgName = file.name;
+        let element = document.getElementById("nameOutput");
+        while (element.firstChild) {
+          element.removeChild(element.firstChild);
+        }
+        element.appendChild(document.createTextNode(imgName));
+      }
+    });
     document.getElementById("fileInput").click();
   };
 
@@ -34,25 +45,28 @@ function MainPage() {
       <div className="filter" />
       <Container>
         <div className="motto text-center">
-          <h1>Name</h1>
+          <b style={{ fontSize: "100px" }}>"TrashTalks"</b>
           <h3>Upload Image:</h3>
           <br />
 
           <Button
             onClick={buttonOnClick}
+            id="upload-btn"
             className="btn-round mr-1"
             color="neutral"
             target="_blank"
             outline
           >
             <input
-              type="file"
               id="fileInput"
+              type="file"
               accept="image/*"
               style={{ width: 0, height: 0 }}
             />
-            Upload
+            UPLOAD
           </Button>
+          <h3>The file you uploaded is: </h3>
+          <h3 id="nameOutput"> </h3>
         </div>
       </Container>
     </div>
