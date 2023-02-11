@@ -7171,7 +7171,9 @@ License - nucleoapp.com/license/
   .presentation-page
     .section-icons
     .icons-nucleo
-    .nc-icon:not(.ninth-left-icon):not(.seventh-left-icon):not(.third-left-icon) {
+    .nc-icon:not(.ninth-left-icon):not(.seventh-left-icon):not(
+      .third-left-icon
+    ) {
     display: none !important;
   }
   .bootstrap-datetimepicker-widget {
