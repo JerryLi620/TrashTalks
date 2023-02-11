@@ -32,7 +32,11 @@ function MainPage() {
       <Container>
         <div className="motto text-center">
           <b style={{ fontSize: "100px" }}>"TrashTalks"</b>
-          <h3>Upload Image:</h3>
+          <br />
+          <h2 style={{ fontSize: "30px" }}>
+            Simplifying waste reduction through education and AI.
+          </h2>
+          <br />
           <br />
 
           <Button
@@ -51,8 +55,12 @@ function MainPage() {
             />
             UPLOAD
           </Button>
-          <h3>The file you uploaded is: </h3>
-          <h3 id="nameOutput"> </h3>
+          <br />
+          <br />
+          <h6 style={{ fontSize: "20px" }}>The file you uploaded is: </h6>
+          <h6 style={{ fontSize: "20px" }} id="nameOutput">
+            {" "}
+          </h6>
         </div>
       </Container>
     </div>
