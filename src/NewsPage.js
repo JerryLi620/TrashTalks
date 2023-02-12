@@ -49,7 +49,7 @@ function NewsPage() {
           <Col className="ml-auto mr-auto" md="8">
             <br />
             <br />
-            <h2>Here are some news:</h2>
+            <h2>Every read makes our planet better:</h2>
             <br />
             <br />
             <br />
@@ -62,7 +62,7 @@ function NewsPage() {
                 <i className="nc-icon nc-chat-33" />
               </div>
               <div className="description">
-                <h4 id="firstnews"></h4>
+                <h4 style={{ color: "#000000" }} id="firstnews"></h4>
                 <br />
                 <br />
               </div>
@@ -79,7 +79,7 @@ function NewsPage() {
                 <i className="nc-icon nc-bulb-63" />
               </div>
               <div className="description">
-                <h4 id="secondnews"></h4>
+                <h4 style={{ color: "#000000" }} id="secondnews"></h4>
                 <br />
                 <br />
               </div>
@@ -96,7 +96,7 @@ function NewsPage() {
                 <i className="nc-icon nc-chart-bar-32" />
               </div>
               <div className="description">
-                <h4 id="thirdnews"></h4>
+                <h4 style={{ color: "#000000" }} id="thirdnews"></h4>
                 <br />
                 <br />
               </div>
@@ -113,7 +113,7 @@ function NewsPage() {
                 <i className="nc-icon nc-globe-2" />
               </div>
               <div className="description">
-                <h4 id="fourthnews"></h4>
+                <h4 style={{ color: "#000000" }} id="fourthnews"></h4>
                 <br />
                 <br />
               </div>
