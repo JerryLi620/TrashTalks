@@ -1,6 +1,22 @@
 import React from "react";
 import { Button, Container } from "reactstrap";
 
+async function query(file) {
+  const data = file;
+  const response = await fetch(
+    "https://api-inference.huggingface.co/models/yangy50/garbage-classification",
+    {
+      headers: {
+        Authorization: "Bearer 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",
+      },
+      method: "POST",
+      body: data,
+    }
+  );
+  const result = await response.json();
+  return result;
+}
+
 function MainPage() {
   let pageHeader = React.createRef();
 
@@ -8,12 +24,14 @@ function MainPage() {
     document.getElementById("upload-btn").addEventListener("change", (e) => {
       let file = e.target.files[0];
       if (file !== undefined) {
-        const imgName = file.name;
-        let element = document.getElementById("nameOutput");
-        while (element.firstChild) {
-          element.removeChild(element.firstChild);
-        }
-        element.appendChild(document.createTextNode(imgName));
+        query(file).then((result) => {
+          const name = result[0].label;
+          let element = document.getElementById("nameOutput");
+          while (element.firstChild) {
+            element.removeChild(element.firstChild);
+          }
+          element.appendChild(document.createTextNode(name));
+        });
       }
     });
     document.getElementById("fileInput").click();
@@ -52,7 +70,7 @@ function MainPage() {
             UPLOAD
           </Button>
           <h3>The file you uploaded is: </h3>
-          <h3 id="nameOutput"> </h3>
+          <h6 id="nameOutput"> </h6>
         </div>
       </Container>
     </div>
