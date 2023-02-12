@@ -76,7 +76,7 @@ function MainPage() {
 
           <br />
           <br />
-          <h6 style={{ fontSize: "20px" }}>The file you uploaded is: </h6>
+          <h6 style={{ fontSize: "20px" }}>Hi There, I am a: </h6>
           <h6 style={{ fontSize: "20px" }} id="nameOutput">
             {" "}
           </h6>
