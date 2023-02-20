@@ -1,4 +1,7 @@
+## Cover and Image Upload Section
 ![image](https://user-images.githubusercontent.com/90734286/220161121-622c7882-f6d1-4dc9-8ffa-e8abb7be2dce.png)
+
+## News Section
 ![image](https://user-images.githubusercontent.com/90734286/220161166-a70b6ed4-6668-4057-9302-3d4b733c8c55.png)
 
 
