@@ -1,3 +1,7 @@
+![image](https://user-images.githubusercontent.com/90734286/220161121-622c7882-f6d1-4dc9-8ffa-e8abb7be2dce.png)
+![image](https://user-images.githubusercontent.com/90734286/220161166-a70b6ed4-6668-4057-9302-3d4b733c8c55.png)
+
+
 ## Inspiration 💡
 
 As the issue of global warming becomes more pressing, we start to think about ways to mitigate its impact in our daily lives. One such area of concern is waste management, where there is an urgent need for more efficient methods to sort and recycle waste. With the growing amount of waste being produced each day, traditional manual sorting methods are becoming less and less effective.
