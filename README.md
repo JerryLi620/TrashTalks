@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Inspiration 💡
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As the issue of global warming becomes more pressing, we start to think about ways to mitigate its impact in our daily lives. One such area of concern is waste management, where there is an urgent need for more efficient methods to sort and recycle waste. With the growing amount of waste being produced each day, traditional manual sorting methods are becoming less and less effective.
 
-## Available Scripts
+To address this challenge, our hackathon project leverages the power of **machine learning algorithms** to classify different types of waste. This not only reduces the environmental impact of waste but also provides an opportunity for waste reuse and recycling. Through this project, we hope to play a small but meaningful role in creating a cleaner and greener future for generations to come.
 
-In the project directory, you can run:
+## What it does 📖
 
-### `npm start`
+Our hackathon project utilizes machine learning to classify six common types of garbage, including cardboard, glass, metal, paper, plastic, and trash. The process is simple: a user can upload an image of the waste, and our model is able to accurately identify its type. This not only helps in streamlining the waste management process, but also encourages proper waste disposal and recycling. In addition, we have also included a page on our platform where users can read up on eco-related news, further promoting environmental awareness and sustainability. With the integration of cutting-edge technology and a focus on education, our project aims to make a positive impact on the waste management industry and the planet at large.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How we built it 🔧
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🪜 ML Model using PyTorch: Our website features an image classification model that is trained on a specific dataset and built on top of PyTorch's VIT pre-trained model. The user can upload an image, which is then sent to the model for classification. The identified type of garbage will be displayed on the screen.
 
-### `npm test`
+🪜 News section using Climate Change Live API: The news section of our website is generated through the Climate Change Live API, which provides daily updated news articles from major news agencies. We have fetched the data from the API and created a frontend container to display the results.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🪜 Front-End: Our website is designed as a single-page site with two sections that can be accessed by scrolling up and down. The components are rendered using ReactStrap. To improve the design, we have added a picture background and customized the font. Additionally, we have incorporated attractive design elements to enhance the overall look of the site.
 
-### `npm run build`
+## Challenges we ran into 📎
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We initially faced challenges with React JS due to our limited experience with the framework. Simple issues such as multiple event listeners resulted in unexpected outputs. After successfully developing the ML algorithm for training and testing the garbage-image data, hosting both the frontend and backend and effectively connecting them proved to be even more challenging. To overcome these challenges, we decided to utilize a trained ML API, which can be easily integrated into our website, similar to how we connect to news sources.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Accomplishments that we're proud of 🌟
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We are proud of our ability to quickly learn how to build a front-end framework using React JS from scratch, challenging our capacity for rapid acquisition of new knowledge. We are also proud of our effective communication and collaboration skills as a team, particularly through our use of the divide and conquer approach.
 
-### `npm run eject`
+## What we learned 📰
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The more we work with React JS, the more we appreciate its power. Its modular structure makes it more flexible than the previous language we used. The reusability feature of React JS also proved to be extremely helpful, as solving one component allowed us to resolve a series of related problems. Our experience with APIs has also improved our ability to manage data flow between the frontend and backend. Despite not having prior experience working together on a project, we were able to effectively divide our tasks, communicate efficiently, and solve problems.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## What's next for TrashTalks  🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Through rigorous testing, our current model has achieved a remarkable 94% accuracy rating. We're aiming to further our efforts by refining the algorithms through more trainings and providing users with an option for giving feedback. Also, our project is currently limited to six types of garbage, but with continued development, we can provide more comprehensive waste management services.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Reference
 
-## Learn More
+https://huggingface.co/yangy50/garbage-classification
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://rapidapi.com/fp89811/api/climate-change-live402/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
